@@ -1,0 +1,52 @@
+@import"../page-styles.css";
+
+// headers
+.flex-main {
+width: 5px;
+padding: 16px;
+display: flex;
+align-items: flex-start;
+align-content: flex-end;
+color:#76c263;
+
+}
+
+
+
+//links
+.flex-container{
+   padding: 16px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-end; 
+  
+   
+  
+
+.into {
+
+   
+ 
+}
+
+.sidebar {
+color: #2A8C4A;
+   
+ 
+
+}
+
+.zen-resources{
+  color: #2A8C4A;
+   
+}
+}
+
+//footer
+
+.flex-footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+font-size: 2em;
+}

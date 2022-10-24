@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+// mixins to take care of repeated patterns.
+
+@mixin header-text {
+  font-weight: bold;
+  
+}
+
+@mixin p-text {
+  font-weight: 500;
+  }
+
+@mixin a-text {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: normal;
+  text-decoration: none;
+}
+
+@mixin body-text ($font-size: 1em, $line-height:normal) {
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin button-link {
+  display: inblock;
+  border: 1px solid;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+@mixin button-hover {
+  border: 1px solid;
+}
+
+
+// Styles that should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+
+h2, h3, h3 h4 {
+  @include header-text;
+  
+}
+
+p{
+  @include body-text;
+  @include p-text;
+}
+
+a {
+  @include body-text;
+  @include a-text;
+ 
+}
+
+
+

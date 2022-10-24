@@ -1,0 +1,59 @@
+@use 'variables' as *;
+@use 'atoms';
+
+// use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
+
+//The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
+
+// To use an mixin from the atoms.scss file use the format:  @include atoms.mixinname;
+
+h1 {
+  background: $color-brown;
+  color: $color-white;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 24px;
+  padding: .5em 1em;
+  
+}
+
+h2 {
+  font-size: 3.5em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1em;
+  
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 1em 0 0.5em 0;
+}
+
+h4 {
+  font-size: 1 em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+[role="banner"] {
+  text-align: left;
+  
+}
+
+.summary {
+  text-align: center;
+ 
+ padding: 1em 1em 1em 1em;
+
+}
+
+.preamble{
+
+
+}
